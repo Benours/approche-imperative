@@ -34,7 +34,7 @@ public class AffichageInverse {
 		
 		for(int i = 0; i < array.length; i++) {
 			System.out.print(arrayCopy[i]);
-			if(i < array.length - 1) {
+			if(i < arrayCopy.length - 1) {
 				System.out.print(", ");
 			}
 		}
