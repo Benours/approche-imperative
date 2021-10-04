@@ -18,6 +18,5 @@ public class ExerciceBoucleBase {
 			System.out.print(i + " ");
 		}
 		System.out.println();
-		
 	}
 }
