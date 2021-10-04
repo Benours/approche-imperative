@@ -18,6 +18,30 @@ public class FabriquerMur {
 	
 	static boolean fabriquerMur(int nbSmall, int nbBig, int longueur) {
 		boolean resultat = false;
+		if(nbSmall * 1 + nbBig * 5 >= longueur) {
+			while(longueur > 0) {
+				if(longueur >= 5 && nbBig > 0) {
+					longueur -= 5;
+					nbBig--;
+				}
+				else if(longueur >= 5 && nbSmall > 0) {
+					longueur -= 1;
+					nbSmall--;
+				}
+				else if(nbSmall > 0) {
+					longueur -= 1;
+					nbSmall--;
+				}
+				else if(longueur > nbSmall * 1) {
+					break;
+				}
+			}
+		}
+		if(longueur == 0)
+			resultat = true;
+		
+		System.out.println(resultat);
+		
 		return resultat;
 	}
 	
